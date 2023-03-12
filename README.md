@@ -1,3 +1,3 @@
 # desafio-rocketseat
 
-<img scr="demonstracao.png">
+<img src="demonstracao.png">
