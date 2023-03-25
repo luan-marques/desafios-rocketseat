@@ -1,0 +1,82 @@
+:root {
+    --purplemod: rgb(27, 27, 27);
+    --pinkmod: rgb(187 153 221);
+}
+
+* {
+    margin: 1;
+    padding: 0;
+    box-sizing: border-box;
+
+    transition-duration: 0.25s;
+}
+
+body {
+    background-color: var(--purplemod);
+    font-family: 'Climate Crisis', cursive;
+    height: 100vh;
+
+    display: grid;
+    grid-template-areas: 
+    "photoprofile photoprofile"
+    "container container"
+    "footer footer";
+
+    grid-template-rows: 300px 1fr 100px;
+}
+
+.photoprofile {
+    grid-area: photoprofile;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+
+    border: 4px solid var(--purplemod);
+    border-radius: 10rem;
+    outline: var(--pinkmod) 2px solid;
+    
+    background-image: url("./iconsimg/WhatsApp Image 2023-03-05 at 12.13.50.jpeg");
+    background-position: center;
+    background-size: 300px 300px;
+} 
+
+#name {
+    margin-top: 250px;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    grid-area: container;
+}
+
+.icons {
+    height: 13vh;
+    margin: 130px 50px;
+    border: 2.5px solid var(--pinkmod);
+    border-radius: 4rem;
+    background-color: white;
+
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icons img {
+    height: 3rem; 
+}
+
+.icons img:hover {
+    height: 4rem;
+}
+
+footer {
+    grid-area: footer;
+    color: var(--pinkmod);
+    text-align: center;
+    opacity: 0.7;
+}
+
+span {
+    color: white;
+}
